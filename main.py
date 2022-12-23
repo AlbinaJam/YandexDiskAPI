@@ -17,7 +17,7 @@ class YaUploader:
             return f"Ошибка загрузки! Код ошибки: {response.status_code}"
 if __name__ == '__main__':
     path_to_file = '/Users/albina/Downloads/эссе.docx'
-    token = 'y0_AgAAAABnP7b1AADLWwAAAADXe_jyZU4H_1UQSvGJUSc-jCIlKOegnV8'
+    token = ''
     uploader = YaUploader(token)
     print(f"Загружаем файл {path_to_file.split('/', )[-1]} на Яндекс.Диск")
     result = uploader.upload(path_to_file)
